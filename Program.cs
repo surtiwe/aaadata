@@ -84,6 +84,26 @@ namespace Norm
             {
                 Console.WriteLine(ex.Message);
             }
+            
+            int a, b;
+            Random obj = new Random();
+            a = obj.Next(10);
+            b = obj.Next(10);
+
+            int c;
+
+            c = a * b;
+
+            Console.Write($"Условие {a} * {b}. Какой ответ:");
+            double otvet = Convert.ToDouble(Console.ReadLine());
+
+            if (otvet == c)
+            {
+                Console.WriteLine("Правильно!");
+            }
+            else
+                Console.WriteLine($
+                    "Неправильно! Правильный ответ = {c}");
 
 
             Console.WriteLine("Press any key to continue");
